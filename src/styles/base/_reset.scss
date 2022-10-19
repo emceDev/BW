@@ -1,0 +1,13 @@
+@use '../abstracts/colors.scss' as *;
+
+
+.light{
+    font-weight: 400;
+    background-color:$white;
+    color:$dark;
+
+}
+.dark{
+    background-color:$dark;
+    color:$white;
+} 

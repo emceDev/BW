@@ -1,0 +1,105 @@
+@use '../../styles/base/fonts.scss';
+$pad:15vw;
+.Projects{
+    display: flex;
+    flex-direction: column;
+    h1{
+        margin-left: 31vw;
+        margin-bottom: 10vh;
+      
+    }
+    h3{
+        align-self: center;
+    }
+    button{
+        margin-left: calc($pad*1.4);
+        position: relative;
+        top: -9vw;
+    }
+}
+
+.List{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    div{
+        margin-left:$pad;
+        margin-right:$pad;
+    }
+    div:nth-of-type(odd){
+        margin-right:calc($pad/3);
+    }
+    div:nth-of-type(even){
+        margin-left:calc($pad/3);
+        margin-top: 24vh;
+    }
+}
+.Project{
+    width: 25vw;
+    img{
+     
+        width: 100%;
+        aspect-ratio: 1;
+        height: auto;
+        
+    }
+    h4{
+        text-align: center;
+        text-transform: uppercase;  
+        font-size: 20px;
+    }
+    h5{
+        margin-top: 3px;
+        text-transform: uppercase;
+        font-size: 13px;
+        text-align: center;
+    }
+    p{
+        margin-top: 5px;
+        font-size:  16px;
+        text-align: center;
+    }
+   
+}
+
+@media screen and (max-width: 700px) {
+    .Projects{
+        margin-bottom: 15vw;
+        h1{
+            width: 100vw;
+            margin-left: 0px;
+            margin-bottom: 15vw;
+        }
+        h4{
+            font-size: 4vw;
+        }
+        h5{
+            font-size: 2.5vw;
+        }
+        p{
+            font-size: 3.1vw;
+        }
+        button{
+            left: 50%;
+            top: 0px;
+            margin-left: 0px;
+        }
+    }
+    .List {
+      flex-direction: column;
+      align-items: center;
+      div:nth-of-type(odd), div:nth-of-type(even), div{
+        margin-right:0px;
+        margin-left:0px;
+        margin-top: 0px;
+    }
+  
+    }
+    .Project{
+      
+        width: 80vw;
+        height: auto;
+        margin-bottom: 1vh;
+    }
+  }
