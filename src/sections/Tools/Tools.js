@@ -37,10 +37,10 @@ const tools = [
 
 export const Tools = (props) => {
 	return (
-		<div className={styles.Tools}>
+		<div className={styles.Tools} id="Tools">
 			<h1>Tools & skills</h1>
 			{tools.map((tool) => {
-				return <Tool key={tool.id} data={tool} report={props.report} />;
+				return <Tool key={tool.id} data={tool} />;
 			})}
 		</div>
 	);
@@ -67,26 +67,25 @@ const Tool = (props) => {
 	}, []);
 
 	return (
-		<div
-			className={styles.Tool}
-			ref={tool}
-			onMouseEnter={(e) => props.report(e.target.parentNode, e.type)}
-		>
+		<div className={styles.Tool} ref={tool} id={"Tools" + title}>
 			<div className={styles.Left}>
-				<h2>{title}</h2>
+				<h2 id={"h2" + title}>{title}</h2>
 			</div>
-			<div className={styles.Right}>
-				<p>{short}</p>
-				<div>
+			<div className={styles.Right} id={"ToolsRight" + title}>
+				<p id={"p" + title}>{short}</p>
+				<div id={"ToolsRightCont" + title}>
 					<button
 						onClick={() => {
 							setDetails(true);
 						}}
 						style={{ display: !details ? "block" : "none" }}
+						id={"btn" + title}
 					>
 						more
 					</button>
-					<p style={{ display: details ? "block" : "none" }}>{desc}</p>
+					<p style={{ display: details ? "block" : "none" }} id={"btn" + title}>
+						{desc}
+					</p>
 				</div>
 			</div>
 		</div>

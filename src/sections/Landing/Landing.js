@@ -1,10 +1,7 @@
 import styles from "./landing.module.scss";
-export const Landing = (props) => {
+export const Landing = () => {
 	return (
-		<div
-			className={styles.Landing}
-			onMouseEnter={(e) => props.report(e.target, e.type)}
-		>
+		<div id="Landing" className={styles.Landing}>
 			<div>
 				<img></img>
 				<h1>MATEUSZ CISŁO</h1>

@@ -29,11 +29,11 @@ const softSkills = [
 ];
 export const SoftSkills = (props) => {
 	return (
-		<div className={styles.SoftSkills}>
+		<div className={styles.SoftSkills} id="SoftSkills">
 			<h1>Soft skills</h1>
 			<div className={styles.SkillContainer}>
 				{softSkills.map((skill) => (
-					<Skill data={skill} key={skill.title} report={props.report} />
+					<Skill data={skill} key={skill.title} />
 				))}
 			</div>
 		</div>
@@ -51,9 +51,9 @@ const Skill = (props) => {
 		<div
 			ref={skill}
 			onMouseEnter={(e) => {
-				props.report(e.target.parentNode, e.type);
 				setExpanded(true);
 			}}
+			id={title}
 			className={styles.Skill}
 		>
 			<h2>{title}</h2>

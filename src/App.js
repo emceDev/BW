@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeBtn } from "./components/ThemeBtn/ThemeBtn";
 import { ThemeContext } from "./context/ThemeContext";
 import { Landing } from "./sections/Landing/Landing";
@@ -8,27 +8,61 @@ import { Tools } from "./sections/Tools/Tools";
 
 function App(props) {
 	const { theme } = useContext(ThemeContext);
-	const report = (el, type) => {
-		// console.log("reporting:", el, type);
-		const date = Date.now();
+	const [interaction, setInteraction] = useState([]);
+	const [count, setCount] = useState(0);
+	const [sent, setSent] = useState(0);
 
-		console.log(date, ":", el, type);
+	const send = () => {
+		setSent((sent) => sent + 1);
+		console.log("====SENT====", sent);
+		setInteraction([]);
+		setCount(0);
+		// await fetch("http://127.0.0.1:3002/siemens", {
+		// 	method: "PUT",
+		// 	headers: {
+		// 		"Content-Type": "application/json",
+		// 	},
+		// 	body: JSON.stringify({ data }),
+		// });
+		// console.log(data);
 	};
-	useEffect(() => {
-		const el = document.getElementsByClassName("App")[0];
-		console.log(el);
-		document.addEventListener("click", (e) => {
-			console.log("cliked", e.target);
-		});
-	}, []);
+	const report = async (e) => {
+		const date = Date.now();
+		setCount(count + 1);
+		let cp = e.nativeEvent.composedPath();
+		let parents = cp.slice(0, -4);
+		const path = parents.map((x) => (x.id !== "" ? x.id : x.tagName));
+
+		const data = { date: date, path: path, type: e.type };
+
+		if (count > 10 || e.type === "click") {
+			console.log("report");
+			send();
+		} else {
+			interaction.push(data);
+			console.log("savign");
+		}
+		// const data = { el: el, type: type, date: date };
+	};
 
 	return (
-		<div className={`App ${theme}`}>
-			<ThemeBtn report={report} />
-			<Landing report={report} />
-			<Projects report={report} />
-			<Tools report={report} />
-			<SoftSkills report={report} />
+		<div
+			className={`App ${theme}`}
+			onMouseOver={(e) => {
+				report(e);
+			}}
+			onClick={(e) => {
+				report(e);
+			}}
+		>
+			<p>
+				{sent} {interaction.length}
+			</p>
+			<ThemeBtn />
+			<Landing />
+			<Projects />
+			<Tools />
+			<SoftSkills />
 		</div>
 	);
 }
