@@ -1,5 +1,6 @@
 import { createRef, useEffect, useState } from "react";
 import styles from "./softSkills.module.scss";
+import txt from "./softSkills.json";
 const softSkills = [
 	{
 		title: "hard worker",
@@ -28,11 +29,12 @@ const softSkills = [
 	},
 ];
 export const SoftSkills = (props) => {
+	const l = navigator.language !== "pl-PL" ? "eng" : "pl";
 	return (
 		<div className={styles.SoftSkills} id="SoftSkills">
-			<h1>Soft skills</h1>
+			<h1>{txt.title[l]}</h1>
 			<div className={styles.SkillContainer}>
-				{softSkills.map((skill) => (
+				{txt.soft[l].map((skill) => (
 					<Skill data={skill} key={skill.title} />
 				))}
 			</div>
@@ -40,7 +42,7 @@ export const SoftSkills = (props) => {
 	);
 };
 const Skill = (props) => {
-	const { title, sub, story } = props.data;
+	const { title, sub, des } = props.data;
 	const [expanded, setExpanded] = useState(false);
 	const skill = createRef();
 	useEffect(() => {
@@ -58,7 +60,7 @@ const Skill = (props) => {
 		>
 			<h2>{title}</h2>
 			<h4>({sub})</h4>
-			<p style={{ visibility: expanded ? "visible" : "hidden" }}>{story}</p>
+			<p style={{ visibility: expanded ? "visible" : "hidden" }}>{des}</p>
 		</div>
 	);
 };

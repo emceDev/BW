@@ -1,53 +1,31 @@
 import { createRef, useEffect, useState } from "react";
 import styles from "./tools.module.scss";
-const tools = [
-	{
-		id: 1,
-		title: "React",
-		short: "advanced concepts of react taken from official react.js site ",
-		desc: "react description of project I had before",
-	},
-	{
-		id: 2,
-		title: "React1",
-		short:
-			"advanced concepts of react taken from official react.js site advanced concepts of react taken from official react.js site",
-		desc: "react description of project I had before",
-	},
-	{
-		id: 3,
-		title: "React2",
-		short: "advanced concepts of react taken from official react.js site",
-		desc: "react description of project I had before",
-	},
-	{
-		id: 4,
-		title: "React3",
-		short:
-			"advanced concepts of react taken from official react.js site advanced concepts of react taken from official react.js site",
-		desc: "react description of project I had before",
-	},
-	{
-		id: 5,
-		title: "React4",
-		short: "advanced concepts of react taken from official react.js site",
-		desc: "react description of project I had before",
-	},
-];
+import txt from "./tools.json";
 
 export const Tools = (props) => {
+	const l = navigator.language !== "pl-PL" ? "eng" : "pl";
 	return (
 		<div className={styles.Tools} id="Tools">
-			<h1>Tools & skills</h1>
-			{tools.map((tool) => {
-				return <Tool key={tool.id} data={tool} />;
+			<h1>{txt.title[l]}</h1>
+			{txt.tools.map((tool) => {
+				return (
+					<Tool
+						key={tool.id}
+						data={{
+							button: txt.button[l],
+							title: tool.title,
+							short: tool.short[l],
+							desc: tool.desc[l],
+						}}
+					/>
+				);
 			})}
 		</div>
 	);
 };
 
 const Tool = (props) => {
-	const { title, short, desc } = props.data;
+	const { title, short, desc, button } = props.data;
 	const [details, setDetails] = useState(false);
 	const tool = createRef();
 
@@ -81,7 +59,7 @@ const Tool = (props) => {
 						style={{ display: !details ? "block" : "none" }}
 						id={"btn" + title}
 					>
-						more
+						{button}
 					</button>
 					<p style={{ display: details ? "block" : "none" }} id={"btn" + title}>
 						{desc}

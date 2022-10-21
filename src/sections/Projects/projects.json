@@ -1,0 +1,96 @@
+{
+	"title":{"eng":"Projects","pl":"Projekty"},
+	"button":{"eng":"show more","pl":"więcej"},
+	"projects": [
+
+		{
+			"id": "1",
+			"title":{
+				"eng":"Monopoly recreation",
+				"pl":"Monopolowi"
+			},
+			"tech":["Next.js","Firebase","Recoil","BML loop"],
+			"link": "https://monopol.vercel.app/Home",
+			"git":"https://github.com/m4t1ce/monopol",
+			"description":{
+				"eng":"Monopoly game recreation on the web. Users can create and join games, project is hooked with data gathering system. During building this project I used Scrum approach which was documented in my diploma paper.",
+				"pl":"Ta aplikacja to odtworzenie monopoly w internecie. Strona jest próbą zastosowania pojęcia Lean, o którym pisałem w swojej pracy licencjackiej, w praktyce."
+			},
+			"img": "https://res.cloudinary.com/m4t1ce/image/upload/c_scale,w_511/v1633541461/portfolio/monopoly_c8jzbf.png"
+		},
+		{
+			"id": "4",
+			"title":{
+				"eng":"FamilyTree",
+				"pl":"FamilyTree"
+			},
+			"tech":["React","Firebase-auth","Cloudinary"],
+			"link": "https://myfamilytrees.netlify.app/",
+			"git":"https://github.com/m4t1ce/familyTree",
+			"description": {
+				"eng":"Website where one can create/share his genealogic tree. It was my first project where I was working with noSQLdb.",
+				"pl":"Strona umożliwiająca tworzenie/dzielenie się drzewem genealogicznym. Pierwszy projekt w którym pracowałem z noSQLdb."
+			},
+			"img": "https://res.cloudinary.com/m4t1ce/image/upload/v1611247938/portfolio/tree_hmmp5a.webp"
+		},		{
+			"id": "10",
+			"title":{
+				"eng":"AgroFleet.",
+				"pl":"AgroFleet."
+			},
+			"tech":["Mongodb","Express","React","Node","JWT","bcrypt","Redux","Bulma"],
+
+			
+			"git":"https://github.com/emceDev/MERN",
+			"description":{
+				"eng":"Most recent web application, hosted on AWS. This application was made in order to learn MERN stack with Redux, bulma and JWT. Application allows for order management for businesses.",
+				"pl":"Najnowsza aplikacja webowa hostowana na AWS. Została stworzona w celu nauki MERN stack, Redux, Bulma i JWT. Aplikacja ułatwia zarządzanie zleceniami w firmie."
+			},
+			"img": "https://res.cloudinary.com/m4t1ce/image/upload/v1658656235/mern_ajtthu.png"
+		},
+		{
+			"id": "5",
+			"title":{
+				"eng":"School portfolio",
+				"pl":"Porfolio szkoły"
+			},
+			"tech":["Next.js","Cloudinary","Recoil","React-DOM","Figma-designed"],
+			"link": "https://nex1-git-main-m4t1ce.vercel.app/",
+			"git":"https://github.com/m4t1ce/nex1",
+			"description": {
+				"eng":"Small portfolio for language school. This was first project where I put more focus on the design of the website.",
+				"pl":"Małe portfolio dla szkoły językowej. Jeden z pierwszych projektów gdzie większą uwagę skupiłem na wyglądzie strony."
+			},
+			"img": "https://res.cloudinary.com/m4t1ce/image/upload/v1611247938/portfolio/School_snvz8u.webp"
+		},
+		{
+			"id": "6",
+			"title":{
+				"eng":"Baksetball team website made in React.js.",
+				"pl":"Strona drużyny koszykarskiej."
+			},
+			"tech":["React","Bootstrap","lazy-loading"],
+			"link": "https://lcowebchallenge.netlify.app/",
+			"git":"https://github.com/m4t1ce/lco",
+			"description":{
+				"eng":"Challenge given by hitesh choudary in which I had to create basketball team website.(React, Cloudinary, Lazyload)",
+				"pl":"Wyzwanie do utworzenia strony internetowej dla drużyny koszykarskiej.(React, Cloudinary, Lazyload)"
+			},
+			"img": "https://res.cloudinary.com/m4t1ce/image/upload/v1600522516/portfolio/Lco.jpg"
+		},
+		{
+			"id": "2",
+			"title":{
+				"eng":"Musican portfolio",
+				"pl":"Portfolio muzyka."
+			},
+			"tech":["React","youtube-api","Firebase-hosted","video element"],
+			"link": "https://djherbertmusic-f0740.firebaseapp.com/",
+			"description":{
+				"eng":"Website for musican. My first project for which I was to get paid and stored firebase.",
+				"pl":"Strona dla muzyka. Mój pierwszy projekt za który miałem mieć zapłacone oraz pierwszy kontakt z firebase."
+		},
+			"img": "https://res.cloudinary.com/m4t1ce/image/upload/v1600522516/portfolio/Dj.jpg"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+    "title":{
+        "eng":"soft skills",
+        "pl":"cechy"
+    },
+    "soft":{"eng":[
+        {"title":"Stubborn",
+        "sub":"subtext",
+         "des":"description"},
+         {"title":"Stubborn",
+         "sub":"subtext",
+          "des":"description"},
+          {"title":"Stubborn",
+          "sub":"subtext",
+           "des":"description"},
+           {"title":"Stubborn",
+           "sub":"subtext",
+            "des":"description"}
+        ],
+    "pl":[
+        {"title":"Uparty",
+        "sub":"jest jak jest",
+         "des":"bo taki mamy kliat"},
+         {"title":"Uparty",
+         "sub":"jest jak jest",
+          "des":"bo taki mamy kliat"},
+          {"title":"Uparty",
+          "sub":"jest jak jest",
+           "des":"bo taki mamy kliat"},
+           {"title":"Uparty",
+           "sub":"jest jak jest",
+            "des":"bo taki mamy kliat"}
+    ]}
+}

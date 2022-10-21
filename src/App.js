@@ -10,10 +10,8 @@ function App() {
 	const { theme } = useContext(ThemeContext);
 	const [interaction, setInteraction] = useState([]);
 	const [count, setCount] = useState(0);
-	const [sent, setSent] = useState(0);
 
 	const send = async () => {
-		setSent((sent) => sent + 1);
 		setInteraction([]);
 		setCount(0);
 		await fetch(
@@ -49,10 +47,10 @@ function App() {
 		<div
 			className={`App ${theme}`}
 			onMouseOver={(e) => {
-				report(e);
+				// report(e);
 			}}
 			onClick={(e) => {
-				report(e);
+				// report(e);
 			}}
 		>
 			<ThemeBtn />

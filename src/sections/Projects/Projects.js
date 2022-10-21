@@ -1,38 +1,15 @@
 import { useState } from "react";
 import styles from "./projects.module.scss";
-const projects = [
-	{
-		id: 1,
-		title: "Monopoly",
-		desc: "Long game anyone can play with eachother made with next js hosted on vercel",
-		technologies: ["react", "next.js", "noSqldb", "node.js", "Api"],
-	},
-	{
-		id: 2,
-		title: "Monopoly",
-		desc: "Long game anyone can play with eachother made with next js hosted on vercel",
-		technologies: ["react", "next.js", "noSqldb", "node.js", "Api"],
-	},
-	{
-		id: 3,
-		title: "Monopoly",
-		desc: "Long game anyone can play with eachother made with next js hosted on vercel",
-		technologies: ["react", "next.js", "noSqldb", "node.js", "Api"],
-	},
-	{
-		id: 4,
-		title: "Monopoly",
-		desc: "Long game anyone can play with eachother made with next js hosted on vercel",
-		technologies: ["react", "next.js", "noSqldb", "node.js", "Api"],
-	},
-];
+import projects from "./projects.json";
+
 export const Projects = () => {
 	const [postNum, setPostNum] = useState(2);
+	const l = navigator.language !== "pl-PL" ? "eng" : "pl";
 	return (
 		<div id="Projects" className={styles.Projects}>
-			<h1>Projects </h1>
+			<h1>{projects.title[l]}</h1>
 			<div className={styles.List} id="ProjectList">
-				{projects.slice(0, postNum).map((x) => {
+				{projects.projects.slice(0, postNum).map((x) => {
 					return <Project key={x.id} data={x} />;
 				})}
 			</div>
@@ -43,19 +20,21 @@ export const Projects = () => {
 				}}
 				id="ProjectBtnMore"
 			>
-				show more
+				{projects.button[l]}
 			</button>
 		</div>
 	);
 };
 const Project = (props) => {
-	const { technologies, title, desc, img, id } = props.data;
+	const { tech, title, desc, img, id, link, description, git } = props.data;
+	const l = navigator.language !== "pl-PL" ? "eng" : "pl";
+
 	return (
-		<div className={styles.Project} id={title + id}>
-			<img id={title + id + "img"}></img>
-			<h4 id={title + id + "h4"}>{title}</h4>
-			<h5 id={title + id + "h5"}>{technologies.map((x) => x + " ")}</h5>
-			<p id={title + id + "p"}>{desc}</p>
+		<div className={styles.Project} id={title.eng + id}>
+			<img id={title.eng + id + "img"}></img>
+			<h4 id={title.eng + id + "h4"}>{title[l]}</h4>
+			<h5 id={title.eng + id + "h5"}>{tech.map((x) => x + " ")}</h5>
+			<p id={title.eng + id + "p"}>{description[l]}</p>
 			{/* <div>
 				<div>G</div>
 				<div>L</div>
