@@ -10,7 +10,7 @@ export const Tools = (props) => {
 			{txt.tools.map((tool) => {
 				return (
 					<Tool
-						key={tool.id}
+						key={tool.title}
 						data={{
 							button: txt.button[l],
 							title: tool.title,
