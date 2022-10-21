@@ -6,26 +6,28 @@ import { Projects } from "./sections/Projects/Projects";
 import { SoftSkills } from "./sections/SoftSkills/SoftSkills";
 import { Tools } from "./sections/Tools/Tools";
 
-function App(props) {
+function App() {
 	const { theme } = useContext(ThemeContext);
 	const [interaction, setInteraction] = useState([]);
 	const [count, setCount] = useState(0);
 	const [sent, setSent] = useState(0);
 
-	const send = () => {
+	const send = async () => {
 		setSent((sent) => sent + 1);
-		console.log("====SENT====", sent);
 		setInteraction([]);
 		setCount(0);
-		// await fetch("http://127.0.0.1:3002/siemens", {
-		// 	method: "PUT",
-		// 	headers: {
-		// 		"Content-Type": "application/json",
-		// 	},
-		// 	body: JSON.stringify({ data }),
-		// });
-		// console.log(data);
+		await fetch(
+			process.env.REACT_APP_SERVER_ADDRES + window.location.pathname,
+			{
+				method: "PUT",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({ interaction }),
+			}
+		);
 	};
+
 	const report = async (e) => {
 		const date = Date.now();
 		setCount(count + 1);
@@ -36,13 +38,11 @@ function App(props) {
 		const data = { date: date, path: path, type: e.type };
 
 		if (count > 10 || e.type === "click") {
-			console.log("report");
+			interaction.push(data);
 			send();
 		} else {
 			interaction.push(data);
-			console.log("savign");
 		}
-		// const data = { el: el, type: type, date: date };
 	};
 
 	return (
@@ -55,9 +55,6 @@ function App(props) {
 				report(e);
 			}}
 		>
-			<p>
-				{sent} {interaction.length}
-			</p>
 			<ThemeBtn />
 			<Landing />
 			<Projects />
