@@ -1,5 +1,5 @@
 @use '../../styles/base/fonts.scss';
-
+@use '../../styles/base/animations.scss' as *;
 .Landing{
 
    height: 60vh;
@@ -18,11 +18,13 @@
    h2{
     margin-top: 5vh;
     word-spacing: 3vw;
-    
+    text-transform: uppercase;
+   animation:appear 1s ease-in;
    }
    p{
       font-weight: 700;
   }
+ 
 }
 @media screen and (max-width: 700px) {
    .Landing{
@@ -31,6 +33,6 @@
          font-size: 9vw;
       }
       h2{
-         font-size: 5vw;
+         font-size: 4vw;
       }
    }}

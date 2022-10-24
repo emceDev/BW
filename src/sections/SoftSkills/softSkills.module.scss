@@ -1,6 +1,7 @@
 @use '../../styles/base/fonts.scss';
 
 .SoftSkills{
+    *{transition: all 0.5s;}
     margin-left: 5vw;
     min-height: 100vh;
     width: 90vw;
@@ -20,35 +21,44 @@
     justify-content: center;
 }
 .Skill{ 
-    // min-width: 20vw;
-    width: 25vw;
+    width: fit-content;
     height: fit-content;
 }
 @media screen and (max-width: 700px) {
     .SoftSkills{
-        h4{font-size: 12px;}
-         h3{font-size: 20px;}
+        h1{
+            font-size: 10vw;
+        }
+        // h4{font-size: 12px;}
+        //  h3{font-size: 20px;}
+        //  h2{
+        //     font-size: 22px;
+        //  }
+       
+        h2{
+            font-size: 6vw;
+         }
+        h3{font-size: 3.5vw}
+        h4{font-size: 3vw} 
      }
+     .SkillContainer{
+        margin-top: 1vh;
+    }
      .Skill{
-        width: 27vw;
+        width:80vw;
      }
 }
 @media screen and (max-width: 500px) {
     .SoftSkills{
+        min-height: 100vw;
         h1{
           
             margin-left: 0vw;
         }
     }
-    .SkillContainer{
-        margin-top: 1vh;
-    }
+   
     .Skill{ 
-        
-        width: 33vw;
-        h2{
-            font-size: 7vw;
-        }
+     
         h4{
             font-size: 2.4vw;
         }

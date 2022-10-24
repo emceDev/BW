@@ -1,6 +1,10 @@
 @use '../../styles/base/fonts.scss';
+@use '../../styles/abstracts/colors.scss' as *;
+@use '../../styles/base/animations.scss' as *;
 $pad:15vw;
 .Projects{
+   
+    transition: all 1s;
     display: flex;
     flex-direction: column;
     h1{
@@ -12,7 +16,7 @@ $pad:15vw;
         align-self: center;
     }
     button{
-        margin-left: calc($pad*1.4);
+        margin-left:40vw;
         position: relative;
         top: -9vw;
     }
@@ -37,6 +41,10 @@ $pad:15vw;
 }
 .Project{
     width: 25vw;
+    animation: grow 2s;
+    overflow: hidden;
+
+
     img{
      
         width: 100%;
@@ -47,22 +55,40 @@ $pad:15vw;
     h4{
         text-align: center;
         text-transform: uppercase;  
-        font-size: 20px;
+        // font-size: 20px;
     }
     h5{
         margin-top: 3px;
         text-transform: uppercase;
-        font-size: 13px;
+        // font-size: 13px;
         text-align: center;
     }
     p{
         margin-top: 5px;
-        font-size:  16px;
+        // font-size:  16px;
         text-align: center;
     }
-   
+   div{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1vw;
+    a{ display: flex;
+        align-items: center;
+        height: 2vw;
+       
+    }
+   }
+   svg{
+    height: 100%;
+   }
 }
-
+    @keyframes grow {
+        from {max-height: 0px}
+        to {max-height: 100vh}
+       }
 @media screen and (max-width: 700px) {
     .Projects{
         margin-bottom: 15vw;
@@ -71,15 +97,15 @@ $pad:15vw;
             margin-left: 0px;
             margin-bottom: 15vw;
         }
-        h4{
-            font-size: 4vw;
-        }
-        h5{
-            font-size: 2.5vw;
-        }
-        p{
-            font-size: 3.1vw;
-        }
+        // h4{
+        //     font-size: 4vw;
+        // }
+        // h5{
+        //     font-size: 2.5vw;
+        // }
+        // p{
+        //     font-size: 3.1vw;
+        // }
         button{
             left: 50%;
             top: 0px;
@@ -93,6 +119,7 @@ $pad:15vw;
         margin-right:0px;
         margin-left:0px;
         margin-top: 0px;
+        
     }
   
     }
@@ -100,6 +127,62 @@ $pad:15vw;
       
         width: 80vw;
         height: auto;
-        margin-bottom: 1vh;
+        margin-bottom: 10vh;
+        div {
+          
+            a{
+            width: auto;
+            height: 30px;
+            // font-size: 2.5vw;
+        }}
     }
+
   }
+
+  @media screen and (max-width: 400px){
+    .Project div{a{
+        height: 2vh;
+    width: 25%;}}
+  }
+
+  .Overlay{
+    transition: opacity 0.5s;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    opacity: 50%;
+    margin-right: 0%;
+    margin-top: 0%;
+}
+.Overlay:hover{
+    opacity: 0%;
+}
+.Overlay.light  {
+    background-color: $dark;
+}
+.Overlay.dark {
+    background-color: $white;
+    
+}
+//   .Overlay{
+//     transition: opacity 0.5s;
+//     position: absolute;
+//     height: 100%;
+//     top: 0px;
+//     right: 0px;
+//     width: 100%;
+//     opacity: 50%;
+//     margin-right: 0%;
+//     margin-top: 0%;
+// }
+// .Overlay:hover{
+//     opacity: 0%;
+// }
+// .Overlay.light  {
+//     background-color: $dark;
+// }
+// .Overlay.dark {
+//     background-color: $white;
+    

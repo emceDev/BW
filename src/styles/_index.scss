@@ -1,10 +1,12 @@
 @use './abstracts/colors.scss' as*;
 @use './abstracts/mixins.scss';
-@use './base/reset.scss';
+@use './base/_reset.scss';
 @use './base/fonts.scss';
 .App{
     width: 100vw;
     min-height: 100vh;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
 }
 button{
     text-transform: uppercase;

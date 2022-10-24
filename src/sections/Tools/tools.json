@@ -2,51 +2,52 @@
 	"title": {"eng":"Tools & skills","pl":"narzędzia i umiejętności"},
     "button":{"eng":"more","pl":"więcej"},
 		"tools": [
+            {
+				"title":"Javascript",
+                "short":{
+				"eng":"Certified JS developer, who builds websites with js and js based frameworks and libraries."
+            ,   "pl":"Certyfikowany programista JavaScript, tworzący serwisy internetowe z użyciem frameworków i biblioteczkek js."
+			},  "desc":{
+                "eng":"Started to learn JS in 2014, built facebook registration page clone with php and mysql. In 2019 got certification on Web application management and creation. Utilizes js on day-basis in creating modern web apps.",
+                "pl":"Początki z programowaniem w js datuje się na 2014, od stworzenia klona panelu rejestracji facebook z użyciem php i mysql. W 2019 zdobył certyfikat E14 ( Tworzenie aplikacji internetowych i baz danych oraz administrowanie bazami ). Teraz korzysta z Js na codzień tworząc serwisy zgodne z najnowszymi trendami."
+            }},
 			{
 				"title":"React.js",
                 "short":{
-                    "eng":"The most important technologies I use in the field of Front is React.js. React's use of syntactic sugar amazed me. I wrote a couple websites in it, and explored MDN. I utilized the following technologies with React:  firebase, cloudinary, facebook SDk, bootstrap/material-UI."
-                    ,"pl":"React jest biblioteką w której napisałem najwięcej stron. Rozumiem jego podstawy ale także i średnio-zaawansowane zagadnienia. Reacta używam w każdej ze swoich aplikacji webowych. "    
+                    "eng":"Creates web application using React, utilizing it from 2016 on advanced level."
+                    ,"pl":"Buduje aplikacje internetowe od 2016 z użyciem React.js, dziś na poziomie zaawansowanym."    
                 },
                 "desc":{
-                    "eng":"default",
-                    "pl":"default"
+                    "eng":"Succesfully created multiple web applications consisting of well known add-ons as Apollo, react-router, redux and many more. Created analytics system for two web apps providing insight into user preferences.",
+                    "pl":"Z powodzeniem stworzył wiele aplikacji internetowych składających się z dobrze znanych dodatków, takich jak Apollo, React-router, redux i wiele innych. Stworzył system analityczny dla dwóch aplikacji webowych zapewniający wgląd w preferencje użytkowników."
                 }
 			},
+         {
+				"title":"Node.js",
+                "short":{
+				"eng":"Created multiple Web-Apis, guiding the user from safe registration to fully usable web applications. "
+            ,"pl":"Utworzył wiele api, prowadzących użytkownika od bezpiecznej rejestracji do w pełni użytecznych aplikacji internetowych. "		
+			},  "desc":{
+                "eng":"Worked with variety of databases as MongoDb, firebaseRTDB from configuration point to utilization with Express. Besides, used node with pupetter, and Mineflayer to simulate human behaviour on the web. ",
+                "pl":"Pracował z różnymi bazami danych, takimi jak MongoDb, firebaseRTDB od punktu konfiguracji do wykorzystania ich potencjału za pomocą Express. Ponadto posiada doświadczenie z pupeteer czy Mineflayer w zastosowaniu ich do symulacji użytkownika w sieci."
+            }},
 			{
 				"title":"Next.js",
                 "short":{
-				"eng":"Next.js is tool which I choose over react since it made building apis simpler and improved how quickly images or subpages loaded. My most extensive application to date was a monopoly clone that I created in it. I tested express and mongodb after using Firebase and Recoil. Naturally, I also tested the rendering options provided by next, but I didn't make any applications for the audience."
-            ,"pl":"W next.js tworzyłem aplikacje webowe, wybrałem go zaraz po reakcie, gdyż upraszczał on budowę api oraz optymalizował ładowanie zdjęć czy podstron. Zbudowałem w nim klona monopoly-moją dotychczas najbardziej rozbudowaną aplikację. Z nextem używałem: Firebase, recoil, testowałem też mongodb i express. Oczywiście rodzaje renderowania jakie oferuje next też przetestowałem, lecz nie stworzyłem żadnej aplikacji dla potwierdzenia."
+				"eng":"Created big serverless application using Next.js utilizing Lean and Agile methodologies as diploma paper project and few fast portfolios."
+            ,"pl":"Stworzył dużą aplikacje serverless używając Next.js w zgodzie z metodologiami Lean oraz Agile jako część swojej pracy dyplomowej oraz kilku szybkich portfolio."
 			},  "desc":{
-                "eng":"default",
-                "pl":"default"
+                "eng":"Has long lasting experience with Next js serverless functions in web application gathering actionable metrics. Besides, utilized Next js rendering methods to obtain optimized web experiences for portfolios. ",
+                "pl":"Posiada długie doświadczenie z Next.js używając funkcji serverless w dużej aplikacji zbierającej dane o ruchu użytkownikó. Pozatym, używał funkcjonalnośći Next.js w zakresie budowania szybko ładujących się wizytówek."
             }
-        },
-            {
-				"title":"MERN",
-                "short":{
-				"eng":"Recently I started work in MERN stack, after working with Node and next.js so it was not so hard to grasp the groundings. I understand how middleware works and JWT. However, I feel that there still more to learn in there, and it will be learned in the future."		,
-			"pl":"Z MERN stack zapoznałem się stosunkowo niedawno, podszedłem do niego z dobrą znajomością Node, oraz zaraz po Next.js więc załapanie architektury nie sprawiło mi problemów. Rozumiem jak działa warstwa middleware z expressem, JWT. Wiem że wszystkiego niewiem, ale z chęcią się dowiem."
-            },  "desc":{
-                "eng":"default",
-                "pl":"default"
-            }},{
-				"title":"Node.js",
-                "short":{
-				"eng":"My adventure with Node.js began while rewriting one of my apps written in react (family tree). At the end, the application was in react, but the adventure with Node has only just begun. Later, Node.js served me long and pleasant hours spent on user simulation using pupetter or mineflayer."
-            ,"pl":"Zacząłem z niego korzystać podczas przepisywania jednej ze swoich aplikacji napisanych w react (drzewo genealogiczne). Ostatecznie aplikacja została w react, ale przygoda z Node dopiero się zaczęła. Później Node.js to dla mnie długie i przyjemne godziny spędzone nad symulacją użytkownika z wykorzystaniem pupetter czy mineflayer. "		
-			},  "desc":{
-                "eng":"default",
-                "pl":"default"
-            }},{
+        },{
                 
-				"title":"Additional",
+				"title":"Design",
                 "short":{
-				"eng":"I wrote few work optimalization scripts in python, one for resizing images in folder and automatically adding breakpoints to css. Now I'am waiting for Raspberry Pi Pico W in order to start some projects in  micro python utylizing python-api. Besides, I created rc car from scratch in arduino running on programmed atmega, soldered esc and nrf24l01 modules to it. This build required from me to get used to C-alike syntax and shown me practically how wireless data transfer works."
-            ,"pl":"Dodatkowo napisałem kilka małych programów w Python, jeden z nich zmieniał rozmiar zdjęć i zapisywał breakpointy w css. Teraz oczekuję na Raspberry Pi Pico W aby zacząć projekty w python korzystające z api pythona. Dodatkowo stworzyłem zdalnie sterowany model od podstaw, programując mikrokontroler, lutując moduły komunikacji zdalnej. Ten projekt nauczył mnie składni podobnej do języka C oraz pokazał mi jak działają podzespoły w urządzeniach elektronicznych."
+				"eng":"On day basis utilizes Sass to create modular css with RWD in mind. "
+            ,"pl":"Na codzień używa Sass w pisaniu modularnego css z myślą o responsywności w wykonaniu."
 },  "desc":{
-    "eng":"default",
-    "pl":"default"
+    "eng":"Has experience in working with figma, creating and coding Responsive designs. In most his works he focused mostly on the backend and functionality, but possesses ability to code any design given.",
+    "pl":"Posiada doświadczenie z użyciem figma w tworzeniu oraz wdrażaniu projektów stron internetowych. Pomimo że w większości prac skupia się na backendzie, to posiada pełne umiejętnośći aby zakodować kazdy projekt."
 }}]
     }

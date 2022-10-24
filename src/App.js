@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { ThemeBtn } from "./components/ThemeBtn/ThemeBtn";
 import { ThemeContext } from "./context/ThemeContext";
+import { Bio } from "./sections/Bio/Bio";
 import { Landing } from "./sections/Landing/Landing";
 import { Projects } from "./sections/Projects/Projects";
 import { SoftSkills } from "./sections/SoftSkills/SoftSkills";
@@ -58,6 +59,7 @@ function App() {
 			<Projects />
 			<Tools />
 			<SoftSkills />
+			<Bio />
 		</div>
 	);
 }

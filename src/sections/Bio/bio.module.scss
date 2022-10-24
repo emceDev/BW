@@ -1,0 +1,28 @@
+.Bio{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    h1{
+        margin-left: 30vw;
+    }
+    p{text-align: center;
+       padding:10vh 20vw 20vh 20vw;
+       font-size:2vw;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .Bio{
+        margin-left: 0vw;
+        width: 100vw;
+        margin-top: 10vw;
+        p{
+            padding: 5vw;
+            font-size: 3vw;
+        }
+    }
+
+}
