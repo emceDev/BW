@@ -27,7 +27,9 @@ function App() {
 			}
 		);
 	};
-
+	useEffect(() => {
+		if (process.env.NODE_ENV !== "development") console.log = () => {};
+	}, []);
 	const report = async (e) => {
 		const date = Date.now();
 		setCount(count + 1);
@@ -49,10 +51,10 @@ function App() {
 		<div
 			className={`App ${theme}`}
 			onMouseOver={(e) => {
-				// report(e);
+				report(e);
 			}}
 			onClick={(e) => {
-				// report(e);
+				report(e);
 			}}
 		>
 			<ThemeBtn />

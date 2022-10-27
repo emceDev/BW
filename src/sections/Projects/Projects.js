@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import styles from "./projects.module.scss";
 import projects from "./projects.json";
 import { NewTab } from "../../svgs/newTab";
@@ -38,13 +38,17 @@ export const Projects = () => {
 	);
 };
 const Project = (props) => {
-	const { tech, title, desc, img, id, link, description, git } = props.data;
+	const { tech, title, desc, image, id, link, description, git, placeholder } =
+		props.data;
 	const l = navigator.language !== "pl-PL" ? "eng" : "pl";
 
 	return (
 		<div className={styles.Project} id={title.eng + id}>
-			<img id={title.eng + id + "img"} src={img}></img>
-
+			<ProjImage
+				id={title.eng + id + "img"}
+				image={image}
+				placeholder={placeholder}
+			/>
 			<h4 id={title.eng + id + "h4"}>{title[l]}</h4>
 			<h5 id={title.eng + id + "h5"}>{tech.map((x) => x + " ")}</h5>
 			<p id={title.eng + id + "p"}>{description[l]}</p>
@@ -61,5 +65,25 @@ const Project = (props) => {
 				</a>
 			</div>
 		</div>
+	);
+};
+const ProjImage = (props) => {
+	const { image, placeholder } = props;
+	const [src, setSrc] = useState(placeholder);
+	const [loaded, setLoaded] = useState(false);
+	useEffect(() => {
+		const img = new Image();
+		img.src = image;
+		img.onload = () => {
+			setLoaded(true);
+			setSrc(img.src);
+		};
+	}, []);
+
+	return (
+		<img
+			src={src}
+			style={{ filter: loaded ? "none" : "blur(10px)", transition: "all 0.5s" }}
+		></img>
 	);
 };
