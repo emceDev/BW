@@ -4,7 +4,7 @@ import projects from "./projects.json";
 import { NewTab } from "../../svgs/newTab";
 import { GitHub } from "../../svgs/GitHub";
 import { Heart } from "../../svgs/heart";
-export const Projects = () => {
+const Projects = () => {
 	const [postNum, setPostNum] = useState(2);
 	const l = navigator.language !== "pl-PL" ? "eng" : "pl";
 
@@ -53,17 +53,21 @@ const Project = (props) => {
 			<h5 id={title.eng + id + "h5"}>{tech.map((x) => x + " ")}</h5>
 			<p id={title.eng + id + "p"}>{description[l]}</p>
 
-			<div>
-				<a href={link} target="_blank">
-					<NewTab />
-				</a>
-				<a href={git} target="_blank">
-					<GitHub />
-				</a>
-				<a id={title.eng + id + "heart"}>
+			<ul>
+				<li id={title.eng + id + "heart"}>
+					<a href={link} target="_blank">
+						<NewTab />
+					</a>
+				</li>
+				<li id={title.eng + id + "heart"}>
+					<a href={git} target="_blank">
+						<GitHub />
+					</a>
+				</li>
+				<li id={title.eng + id + "heart"}>
 					<Heart />
-				</a>
-			</div>
+				</li>
+			</ul>
 		</div>
 	);
 };
@@ -83,7 +87,9 @@ const ProjImage = (props) => {
 	return (
 		<img
 			src={src}
+			alt={src}
 			style={{ filter: loaded ? "none" : "blur(10px)", transition: "all 0.5s" }}
 		></img>
 	);
 };
+export default Projects;

@@ -28,7 +28,7 @@ const softSkills = [
 		story: "Was born in poland and it speaks for itself",
 	},
 ];
-export const SoftSkills = (props) => {
+const SoftSkills = (props) => {
 	const l = navigator.language !== "pl-PL" ? "eng" : "pl";
 	const [scroll, setScroll] = useState({ x: 0, y: 0 });
 
@@ -99,3 +99,4 @@ const Skill = (props) => {
 		</div>
 	);
 };
+export default SoftSkills;

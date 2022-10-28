@@ -72,15 +72,26 @@ $pad:15vw;
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
-    display: flex;
-    justify-content: space-evenly;
+    
     margin-top: 1vw;
     a{ display: flex;
         align-items: center;
-        height: 2vw;
-       
     }
+
    }
+   ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+li{
+align-items: center;
+    height: 2vw;
+    margin-top: 0px;
+    margin-left: 0px;
+}
    svg{
     height: 100%;
    }
@@ -97,15 +108,6 @@ $pad:15vw;
             margin-left: 0px;
             margin-bottom: 15vw;
         }
-        // h4{
-        //     font-size: 4vw;
-        // }
-        // h5{
-        //     font-size: 2.5vw;
-        // }
-        // p{
-        //     font-size: 3.1vw;
-        // }
         button{
             left: 50%;
             top: 0px;
@@ -128,22 +130,23 @@ $pad:15vw;
         width: 80vw;
         height: auto;
         margin-bottom: 10vh;
-        div {
-          
-            a{
+        ul{
             width: auto;
             height: 30px;
             // font-size: 2.5vw;
-        }}
+        }
+        li{
+            height: auto;
+        }
     }
 
   }
 
   @media screen and (max-width: 400px){
-    .Project div{a{
+    .Project li{
         height: 2vh;
     width: 25%;}}
-  }
+  
 
   .Overlay{
     transition: opacity 0.5s;

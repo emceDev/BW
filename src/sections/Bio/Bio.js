@@ -1,6 +1,6 @@
 import txt from "./bio.json";
 import styles from "./bio.module.scss";
-export const Bio = () => {
+const Bio = () => {
 	const l = navigator.language !== "pl-PL" ? "eng" : "pl";
 	return (
 		<div className={styles.Bio}>
@@ -9,3 +9,4 @@ export const Bio = () => {
 		</div>
 	);
 };
+export default Bio;

@@ -1,5 +1,5 @@
 import styles from "./contact.module.scss";
-export const Contact = () => {
+const Contact = () => {
 	return (
 		<div className={styles.Contact}>
 			<h1>Contact</h1>
@@ -15,3 +15,4 @@ export const Contact = () => {
 		</div>
 	);
 };
+export default Contact;

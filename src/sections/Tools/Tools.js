@@ -2,7 +2,7 @@ import { createRef, useContext, useEffect, useState } from "react";
 import styles from "./tools.module.scss";
 import txt from "./tools.json";
 
-export const Tools = (props) => {
+const Tools = (props) => {
 	const l = navigator.language !== "pl-PL" ? "eng" : "pl";
 	const [scroll, setScroll] = useState(0);
 	const [toLoad, setToLoad] = useState(1);
@@ -106,3 +106,4 @@ const Tool = (props) => {
 		</div>
 	);
 };
+export default Tools;

@@ -1,14 +1,19 @@
-import { useContext, useEffect, useState } from "react";
-import { ThemeBtn } from "./components/ThemeBtn/ThemeBtn";
+import React, { useContext, useEffect, useState, Suspense } from "react";
 import { ThemeContext } from "./context/ThemeContext";
-import { Bio } from "./sections/Bio/Bio";
-import { Contact } from "./sections/Contact/Contact";
 import { Landing } from "./sections/Landing/Landing";
-import { Projects } from "./sections/Projects/Projects";
-import { SoftSkills } from "./sections/SoftSkills/SoftSkills";
-import { Tools } from "./sections/Tools/Tools";
-
+import { ThemeBtn } from "./components/ThemeBtn/ThemeBtn";
 function App() {
+	// const ThemeBtn = React.lazy(() => import("./components/ThemeBtn/ThemeBtn"));
+	// const Landing = React.lazy(() => import("./sections/Landing/Landing"));
+
+	const Bio = React.lazy(() => import("./sections/Bio/Bio"));
+	const Contact = React.lazy(() => import("./sections/Contact/Contact"));
+	const Projects = React.lazy(() => import("./sections/Projects/Projects"));
+	const SoftSkills = React.lazy(() =>
+		import("./sections/SoftSkills/SoftSkills")
+	);
+	const Tools = React.lazy(() => import("./sections/Tools/Tools"));
+
 	const { theme } = useContext(ThemeContext);
 	const [interaction, setInteraction] = useState([]);
 	const [count, setCount] = useState(0);
@@ -51,19 +56,21 @@ function App() {
 		<div
 			className={`App ${theme}`}
 			onMouseOver={(e) => {
-				report(e);
+				// report(e);
 			}}
 			onClick={(e) => {
-				report(e);
+				// report(e);
 			}}
 		>
 			<ThemeBtn />
 			<Landing />
-			<Projects />
-			<Tools />
-			<SoftSkills />
-			<Bio />
-			<Contact />
+			<Suspense fallback={<div>Loading...</div>}>
+				<Projects />
+				<Tools />
+				<SoftSkills />
+				<Bio />
+				<Contact />
+			</Suspense>
 		</div>
 	);
 }
