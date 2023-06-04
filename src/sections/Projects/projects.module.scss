@@ -1,173 +1,171 @@
-@use '../../styles/base/fonts.scss';
-@use '../../styles/abstracts/colors.scss' as *;
-@use '../../styles/base/animations.scss' as *;
-$pad:15vw;
-.Projects{
-   
-    transition: all 1s;
-    display: flex;
-    flex-direction: column;
-    h1{
-        margin-left: 31vw;
-        margin-bottom: 10vh;
-      
-    }
-    h3{
-        align-self: center;
-    }
-    button{
-        margin-left:40vw;
-        position: relative;
-        top: -9vw;
-    }
+@use "../../styles/base/fonts.scss";
+@use "../../styles/abstracts/colors.scss" as *;
+@use "../../styles/base/animations.scss" as *;
+$pad: 15vw;
+.Projects {
+	transition: all 1s;
+	display: flex;
+	flex-direction: column;
+	h1 {
+		margin-left: 31vw;
+		margin-bottom: 10vh;
+	}
+	h3 {
+		align-self: center;
+	}
+	button {
+		margin-left: 40vw;
+		// position: relative;
+		top: -9vw;
+		margin-bottom: 5vh;
+	}
 }
 
-.List{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    div{
-        margin-left:$pad;
-        margin-right:$pad;
-    }
-    div:nth-of-type(odd){
-        margin-right:calc($pad/3);
-    }
-    div:nth-of-type(even){
-        margin-left:calc($pad/3);
-        margin-top: 24vh;
-    }
+.List {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	div {
+		margin-left: $pad;
+		margin-right: $pad;
+	}
+	div:nth-of-type(odd) {
+		margin-right: calc($pad/3);
+	}
+	div:nth-of-type(even) {
+		margin-left: calc($pad/3);
+		margin-top: 24vh;
+	}
 }
-.Project{
-    width: 25vw;
-    animation: grow 2s;
-    overflow: hidden;
+.Project {
+	width: 25vw;
+	animation: grow 2s;
+	overflow: hidden;
 
+	img {
+		width: 100%;
+		// aspect-ratio: 1;
+		height: auto;
+	}
+	h4 {
+		text-align: center;
+		text-transform: uppercase;
+		// font-size: 20px;
+	}
+	h5 {
+		margin-top: 3px;
+		text-transform: uppercase;
+		// font-size: 13px;
+		text-align: center;
+	}
+	p {
+		margin-top: 5px;
+		// font-size:  16px;
+		text-align: center;
+	}
+	div {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
 
-    img{
-     
-        width: 100%;
-        aspect-ratio: 1;
-        height: auto;
-        
-    }
-    h4{
-        text-align: center;
-        text-transform: uppercase;  
-        // font-size: 20px;
-    }
-    h5{
-        margin-top: 3px;
-        text-transform: uppercase;
-        // font-size: 13px;
-        text-align: center;
-    }
-    p{
-        margin-top: 5px;
-        // font-size:  16px;
-        text-align: center;
-    }
-   div{
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-    
-    margin-top: 1vw;
-    a{ display: flex;
-        align-items: center;
-    }
-
-   }
-   ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding: 0;
-    margin: 0; 
+		margin-top: 1vw;
+		a {
+			display: flex;
+			align-items: center;
+		}
+	}
+	ul {
+		display: flex;
+		justify-content: space-evenly;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		align-items: center;
+		height: 2vw;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	svg {
+		height: 100%;
+	}
 }
-li{
-align-items: center;
-    height: 2vw;
-    margin-top: 0px;
-    margin-left: 0px;
+@keyframes grow {
+	from {
+		max-height: 0px;
+	}
+	to {
+		max-height: 100vh;
+	}
 }
-   svg{
-    height: 100%;
-   }
-}
-    @keyframes grow {
-        from {max-height: 0px}
-        to {max-height: 100vh}
-       }
 @media screen and (max-width: 700px) {
-    .Projects{
-        margin-bottom: 15vw;
-        h1{
-            width: 100vw;
-            margin-left: 0px;
-            margin-bottom: 15vw;
-        }
-        button{
-            left: 50%;
-            top: 0px;
-            margin-left: 0px;
-        }
-    }
-    .List {
-      flex-direction: column;
-      align-items: center;
-      div:nth-of-type(odd), div:nth-of-type(even), div{
-        margin-right:0px;
-        margin-left:0px;
-        margin-top: 0px;
-        
-    }
-  
-    }
-    .Project{
-      
-        width: 80vw;
-        height: auto;
-        margin-bottom: 10vh;
-        ul{
-            width: auto;
-            height: 30px;
-            // font-size: 2.5vw;
-        }
-        li{
-            height: auto;
-        }
-    }
-
-  }
-
-  @media screen and (max-width: 400px){
-    .Project li{
-        height: 2vh;
-    width: 25%;}}
-  
-
-  .Overlay{
-    transition: opacity 0.5s;
-    position: absolute;
-    height: 100%;
-    top: 0px;
-    right: 0px;
-    width: 100%;
-    opacity: 50%;
-    margin-right: 0%;
-    margin-top: 0%;
+	.Projects {
+		margin-bottom: 15vw;
+		h1 {
+			width: 100vw;
+			margin-left: 0px;
+			margin-bottom: 15vw;
+		}
+		button {
+			left: 50%;
+			top: 0px;
+			margin-left: 70px;
+		}
+	}
+	.List {
+		flex-direction: column;
+		align-items: center;
+		div:nth-of-type(odd),
+		div:nth-of-type(even),
+		div {
+			margin-right: 0px;
+			margin-left: 0px;
+			margin-top: 0px;
+		}
+	}
+	.Project {
+		width: 80vw;
+		height: auto;
+		margin-bottom: 10vh;
+		ul {
+			width: auto;
+			height: 30px;
+			// font-size: 2.5vw;
+		}
+		li {
+			height: auto;
+		}
+	}
 }
-.Overlay:hover{
-    opacity: 0%;
+
+@media screen and (max-width: 400px) {
+	.Project li {
+		height: 2vh;
+		width: 25%;
+	}
 }
-.Overlay.light  {
-    background-color: $dark;
+
+.Overlay {
+	transition: opacity 0.5s;
+	position: absolute;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	opacity: 50%;
+	margin-right: 0%;
+	margin-top: 0%;
+}
+.Overlay:hover {
+	opacity: 0%;
+}
+.Overlay.light {
+	background-color: $dark;
 }
 .Overlay.dark {
-    background-color: $white;
-    
+	background-color: $white;
 }
 //   .Overlay{
 //     transition: opacity 0.5s;
@@ -188,4 +186,3 @@ align-items: center;
 // }
 // .Overlay.dark {
 //     background-color: $white;
-    

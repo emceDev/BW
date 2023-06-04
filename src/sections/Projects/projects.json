@@ -5,6 +5,38 @@
 		{
 			"id": "1",
 			"title":{
+					"eng":"ApolloShop",
+					"pl":"ApolloSklep"
+			},
+			"tech":["React.js","Apollo","Azure","GraphQl","SCSS","NginxSubDomain"],
+			"link": "https://mateuszce.pl/ApolloE/",
+			"git":"https://github.com/emceDev/toAws",
+			"description":{
+					"eng":"Frontend of an Apollo Ecommerce App, deployed on Azure as an portfolio subdomain.",                       
+					"pl":"Front sklepu internetowego bazującego na Apollo, hostowany na Azure jako subdomena tego portfolio"
+					},
+			"image":"./imgs/Apollo.webp ",
+			"placeholder":"./imgs/Apollo_placeholder.webp "
+		},
+		{
+                        "id": "2",
+                        "title":{
+                                "eng":"Porftolio template",
+                                "pl":"Template portfolio"
+                        },
+                        "tech":["React.js","SASS","Firebase","ImgLoaders"],
+                        "link": "https://jpdsystems-fb069.web.app/",
+                        "git":"https://github.com/emceDev/JPDSystem",
+                        "description":{
+                                "eng":"Porftolio site for an electrician. The main purpose of this project was to refresh the subject of photo loading and styling in general.",                       
+								"pl":"Strona porftolio dla elektryka. Głównym celem tego projektu było odświeżenie tematu ładowania zdjęć oraz stylowanie."
+								},
+                        "image":"./imgs/jpd.webp",
+                        "placeholder":"./imgs/jpd_placeholder.webp"
+		},
+		{
+			"id": "3",
+			"title":{
 				"eng":"Monopoly recreation",
 				"pl":"Monopolowi"
 			},
@@ -19,7 +51,7 @@
 			"placeholder":"./imgs/monopol_placeholder.webp  "
 		},
 		{
-			"id": "4",
+			"id": "5",
 			"title":{
 				"eng":"FamilyTree",
 				"pl":"FamilyTree"
@@ -34,7 +66,7 @@
 			"image":"./imgs/tree.webp ",
 			"placeholder":" ./imgs/tree_placeholder"
 		},		{
-			"id": "10",
+			"id": "4",
 			"title":{
 				"eng":"AgroFleet.",
 				"pl":"AgroFleet."
@@ -51,7 +83,7 @@
 			"placeholder":"./imgs/agrofleet_placeholder.webp "
 		},
 		{
-			"id": "5",
+			"id": "6",
 			"title":{
 				"eng":"School portfolio",
 				"pl":"Porfolio szkoły"
@@ -67,7 +99,7 @@
 			"placeholder":" ./imgs/school_placeholder.webp"
 		},
 		{
-			"id": "6",
+			"id": "7",
 			"title":{
 				"eng":"Baksetball team website made in React.js.",
 				"pl":"Strona drużyny koszykarskiej."
@@ -83,7 +115,7 @@
 			"placeholder":"./imgs/lco_placeholder.webp"
 		},
 		{
-			"id": "2",
+			"id": "8",
 			"title":{
 				"eng":"Musican portfolio",
 				"pl":"Portfolio muzyka."
