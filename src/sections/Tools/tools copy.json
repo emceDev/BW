@@ -1,0 +1,50 @@
+{
+  "title": { "eng": "Tools & skills", "pl": "narzędzia i umiejętności" },
+  "button": { "eng": "more", "pl": "więcej" },
+  "tools": [
+    {
+      "title": "Javascript",
+      "short": {
+        "eng": "Certified web developer, who builds websites with JavaScript and js based frameworks and libraries.",
+        "pl": "Certyfikowany web developer, tworzący serwisy internetowe z użyciem frameworków i biblioteczkek js."
+      },
+      "desc": {
+        "eng": "Started to learn JS in 2014, built facebook registration page clone with php and mysql. In 2019 got certification on Web application management and creation. Utilizes js on day-basis in creating modern web apps.",
+        "pl": "Jego początki z programowaniem w js datuje się na 2014. Jego przygoda zaczęłą się od stworzenia klona panelu rejestracji facebook z użyciem php i mysql. W 2019 zdobył certyfikat E14 ( Tworzenie aplikacji internetowych i baz danych oraz administrowanie bazami ). Teraz korzysta z Js na codzień tworząc serwisy i narzędzia zgodne z najnowszymi trendami."
+      }
+    },
+    {
+      "title": "React.js",
+      "short": {
+        "eng": "Creates web application using React, utilizing it from 2016 on advanced level.",
+        "pl": "Buduje aplikacje internetowe od 2016 z użyciem React.js, dziś na poziomie zaawansowanym."
+      },
+      "desc": {
+        "eng": "Succesfully created multiple web applications consisting of well known add-ons as Apollo, react-router, redux and many more. Created analytics system for two web apps providing insight into user preferences.",
+        "pl": "Z powodzeniem stworzył wiele aplikacji internetowych składających się z dobrze znanych dodatków, takich jak Apollo, React-router, redux i wiele innych. Stworzył system analityczny dla dwóch aplikacji webowych zapewniający wgląd w preferencje użytkowników."
+      }
+    },
+    {
+      "title": "Node.js",
+      "short": {
+        "eng": "Created multiple Web-Apis, guiding the user from safe registration to fully usable web applications. ",
+        "pl": "Utworzył wiele api, prowadzących użytkownika od bezpiecznej rejestracji do w pełni użytecznych aplikacji internetowych. "
+      },
+      "desc": {
+        "eng": "Has experience with a variety of databases as MongoDb, firebaseRTDB from configuration point to utilisation with Express. Besides, used node with pupetter, and Mineflayer to simulate human behaviour on the web. ",
+        "pl": "Pracował z różnymi bazami danych, takimi jak MongoDb, firebaseRTDB od punktu konfiguracji do wykorzystania ich potencjału za pomocą Express. Ponadto posiada doświadczenie z pupeteer czy Mineflayer w zastosowaniu ich do symulacji użytkownika w sieci."
+      }
+    },
+    {
+      "title": "Design",
+      "short": {
+        "eng": "On day basis utilizes Sass to create modular css with RWD in mind. ",
+        "pl": "Na codzień używa Sass w pisaniu modularnego css z myślą o responsywności w wykonaniu."
+      },
+      "desc": {
+        "eng": "Has experience in working with figma, creating and coding Responsive designs. In most his works he focused mostly on the backend and functionality, but possesses ability to code any design given.",
+        "pl": "Posiada doświadczenie z użyciem figma w tworzeniu oraz wdrażaniu projektów stron internetowych. Pomimo że w większości prac skupia się na backendzie, to posiada pełne umiejętnośći aby zakodować każdy projekt."
+      }
+    }
+  ]
+}

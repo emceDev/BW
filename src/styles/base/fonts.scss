@@ -1,7 +1,8 @@
 @use '../abstracts/colors' as *;
 
 .App{
-    font-family:'inter'; 
+    // font-family:'inter'; 
+    font-family: Arial;
     overflow: hidden;
 }
 .App *::first-letter {

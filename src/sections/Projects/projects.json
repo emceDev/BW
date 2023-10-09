@@ -1,133 +1,175 @@
 {
-	"title":{"eng":"Projects","pl":"Projekty"},
-	"button":{"eng":"show more","pl":"więcej"},
-	"projects": [
-		{
-			"id": "1",
-			"title":{
-					"eng":"ApolloShop",
-					"pl":"ApolloSklep"
-			},
-			"tech":["React.js","Apollo","Azure","GraphQl","SCSS","NginxSubDomain"],
-			"link": "https://mateuszce.pl/ApolloE/",
-			"git":"https://github.com/emceDev/toAws",
-			"description":{
-					"eng":"Frontend of an Apollo Ecommerce App, deployed on Azure as an portfolio subdomain.",                       
-					"pl":"Front sklepu internetowego bazującego na Apollo, hostowany na Azure jako subdomena tego portfolio"
-					},
-			"image":"./imgs/Apollo.webp ",
-			"placeholder":"./imgs/Apollo_placeholder.webp "
-		},
-		{
-                        "id": "2",
-                        "title":{
-                                "eng":"Porftolio template",
-                                "pl":"Template portfolio"
-                        },
-                        "tech":["React.js","SASS","Firebase","ImgLoaders"],
-                        "link": "https://jpdsystems-fb069.web.app/",
-                        "git":"https://github.com/emceDev/JPDSystem",
-                        "description":{
-                                "eng":"Porftolio site for an electrician. The main purpose of this project was to refresh the subject of photo loading and styling in general.",                       
-								"pl":"Strona porftolio dla elektryka. Głównym celem tego projektu było odświeżenie tematu ładowania zdjęć oraz stylowanie."
-								},
-                        "image":"./imgs/jpd.webp",
-                        "placeholder":"./imgs/jpd_placeholder.webp"
-		},
-		{
-			"id": "3",
-			"title":{
-				"eng":"Monopoly recreation",
-				"pl":"Monopolowi"
-			},
-			"tech":["Next.js","Firebase","Recoil","BML loop"],
-			"link": "https://monopol.vercel.app/Home",
-			"git":"https://github.com/m4t1ce/monopol",
-			"description":{
-				"eng":"Monopoly game recreation on the web. Users can create and join games, project is hooked with data gathering system. During building this project I used Scrum approach which was documented in my diploma paper.",
-				"pl":"Ta aplikacja to odtworzenie monopoly w internecie. Strona jest próbą zastosowania pojęcia Lean, o którym pisałem w swojej pracy licencjackiej, w praktyce."
-			},
-			"image":"./imgs/monopol.webp ",
-			"placeholder":"./imgs/monopol_placeholder.webp  "
-		},
-		{
-			"id": "5",
-			"title":{
-				"eng":"FamilyTree",
-				"pl":"FamilyTree"
-			},
-			"tech":["React","Firebase-auth","Cloudinary"],
-			"link": "https://myfamilytrees.netlify.app/",
-			"git":"https://github.com/m4t1ce/familyTree",
-			"description": {
-				"eng":"Website where one can create/share his genealogic tree. It was my first project where I was working with noSQLdb.",
-				"pl":"Strona umożliwiająca tworzenie/dzielenie się drzewem genealogicznym. Pierwszy projekt w którym pracowałem z noSQLdb."
-			},
-			"image":"./imgs/tree.webp ",
-			"placeholder":" ./imgs/tree_placeholder"
-		},		{
-			"id": "4",
-			"title":{
-				"eng":"AgroFleet.",
-				"pl":"AgroFleet."
-			},
-			"tech":["Mongodb","Express","React","Node","JWT","bcrypt","Redux","Bulma"],
+  "title": { "eng": "Projects", "pl": "Projekty" },
+  "button": { "eng": "show more", "pl": "więcej" },
+  "projects": [
+    {
+      "id": "11",
+      "title": {
+        "eng": "Chrome extension",
+        "pl": "Rozszerzenie Chrome"
+      },
+      "tech": ["JavaScript"],
+      "link": "https://www.youtube.com/watch?v=QOP0GBHeav8",
+      "git": "https://github.com/emceDev/chromeExtension/tree/main/chromeExt",
+      "description": {
+        "eng": "A chrome extension simplifying the data acquisition from websites",
+        "pl": "Rozszerzenie Chrome ulatwiające pozyskiwanie danych ze stron internetowych"
+      },
+      "image": "./imgs/Extension.webp",
+      "placeholder": "./imgs/Extension_placeholder.webp"
+    },
 
-			"link": "https://agrofleet.pl/",
-			"git":"https://github.com/emceDev/MERN",
-			"description":{
-				"eng":"Most recent web application, hosted on AWS. This application was made in order to learn MERN stack with Redux, bulma and JWT. Application allows for order management for businesses.",
-				"pl":"Najnowsza aplikacja webowa hostowana na AWS. Została stworzona w celu nauki MERN stack, Redux, Bulma i JWT. Aplikacja ułatwia zarządzanie zleceniami w firmie."
-			},
-			"image":"./imgs/agrofleet.webp",
-			"placeholder":"./imgs/agrofleet_placeholder.webp "
-		},
-		{
-			"id": "6",
-			"title":{
-				"eng":"School portfolio",
-				"pl":"Porfolio szkoły"
-			},
-			"tech":["Next.js","Cloudinary","Recoil","React-DOM","Figma-designed"],
-			"link": "https://nex1-git-main-m4t1ce.vercel.app/",
-			"git":"https://github.com/m4t1ce/nex1",
-			"description": {
-				"eng":"Small portfolio for language school. This was first project where I put more focus on the design of the website.",
-				"pl":"Małe portfolio dla szkoły językowej. Jeden z pierwszych projektów gdzie większą uwagę skupiłem na wyglądzie strony."
-			},
-			"image":" ./imgs/school.webp",
-			"placeholder":" ./imgs/school_placeholder.webp"
-		},
-		{
-			"id": "7",
-			"title":{
-				"eng":"Baksetball team website made in React.js.",
-				"pl":"Strona drużyny koszykarskiej."
-			},
-			"tech":["React","Bootstrap","lazy-loading"],
-			"link": "https://lcowebchallenge.netlify.app/",
-			"git":"https://github.com/m4t1ce/lco",
-			"description":{
-				"eng":"Challenge given by hitesh choudary in which I had to create basketball team website.(React, Cloudinary, Lazyload)",
-				"pl":"Wyzwanie do utworzenia strony internetowej dla drużyny koszykarskiej.(React, Cloudinary, Lazyload)"
-			},
-			"image":"./imgs/lco.webp",
-			"placeholder":"./imgs/lco_placeholder.webp"
-		},
-		{
-			"id": "8",
-			"title":{
-				"eng":"Musican portfolio",
-				"pl":"Portfolio muzyka."
-			},
-			"tech":["React","youtube-api","Firebase-hosted","video element"],
-			"link": "https://djherbertmusic-f0740.firebaseapp.com/",
-			"description":{
-				"eng":"Website for musican. My first project for which I was to get paid and stored firebase.",
-				"pl":"Strona dla muzyka. Mój pierwszy projekt za który miałem mieć zapłacone oraz pierwszy kontakt z firebase."
-		},
-		"image":"./imgs/dj.webp",
-		"placeholder":" ./imgs/dj_placeholder.webp"
-		}
-	]
+    {
+      "id": "2",
+      "title": {
+        "eng": "Porftolio template",
+        "pl": "Template portfolio"
+      },
+      "tech": ["React.js", "SASS", "Firebase", "ImgLoaders"],
+      "link": "https://jpdsystems-fb069.web.app/",
+      "git": "https://github.com/emceDev/JPDSystem",
+      "description": {
+        "eng": "Porftolio site for an electrician. The main purpose of this project was to refresh the subject of photo loading and styling in general.",
+        "pl": "Strona porftolio dla elektryka. Głównym celem tego projektu było odświeżenie tematu ładowania zdjęć oraz stylowanie."
+      },
+      "image": "./imgs/jpd.webp",
+      "placeholder": "./imgs/jpd_placeholder.webp"
+    },
+    {
+      "id": "1",
+      "title": {
+        "eng": "ApolloShop",
+        "pl": "ApolloSklep"
+      },
+      "tech": [
+        "React.js",
+        "Apollo",
+        "Azure",
+        "GraphQl",
+        "SCSS",
+        "NginxSubDomain"
+      ],
+      "link": "https://mcislo.pl/ApolloE/",
+      "git": "https://github.com/emceDev/toAws",
+      "description": {
+        "eng": "Frontend of an Apollo Ecommerce App, deployed on Azure as an portfolio subdomain.",
+        "pl": "Front sklepu internetowego bazującego na Apollo, hostowany na Azure jako subdomena tego portfolio"
+      },
+      "image": "./imgs/Apollo.webp ",
+      "placeholder": "./imgs/Apollo_placeholder.webp "
+    },
+    {
+      "id": "3",
+      "title": {
+        "eng": "AgroFleet.",
+        "pl": "AgroFleet."
+      },
+      "tech": [
+        "Mongodb",
+        "Express",
+        "React",
+        "Node",
+        "JWT",
+        "bcrypt",
+        "Redux",
+        "Bulma"
+      ],
+
+      "link": false,
+      "git": "https://github.com/emceDev/MERN",
+      "description": {
+        "eng": "Most recent web application, hosted on AWS. This application was made in order to learn MERN stack with Redux, bulma and JWT. Application allows for order management for businesses.",
+        "pl": "Najnowsza aplikacja webowa hostowana na AWS. Została stworzona w celu nauki MERN stack, Redux, Bulma i JWT. Aplikacja ułatwia zarządzanie zleceniami w firmie."
+      },
+      "image": "./imgs/agrofleet.webp",
+      "placeholder": "./imgs/agrofleet_placeholder.webp "
+    },
+    {
+      "id": "6",
+      "title": {
+        "eng": "School portfolio",
+        "pl": "Porfolio szkoły"
+      },
+      "tech": [
+        "Next.js",
+        "Cloudinary",
+        "Recoil",
+        "React-DOM",
+        "Figma-designed"
+      ],
+      "link": "https://nex1-git-main-m4t1ce.vercel.app/",
+      "git": "https://github.com/m4t1ce/nex1",
+      "description": {
+        "eng": "Small portfolio for language school. This was first project where I put more focus on the design of the website.",
+        "pl": "Małe portfolio dla szkoły językowej. Jeden z pierwszych projektów gdzie większą uwagę skupiłem na wyglądzie strony."
+      },
+      "image": " ./imgs/school.webp",
+      "placeholder": " ./imgs/school_placeholder.webp"
+    },
+
+    {
+      "id": "5",
+      "title": {
+        "eng": "FamilyTree",
+        "pl": "FamilyTree"
+      },
+      "tech": ["React", "Firebase-auth", "Cloudinary"],
+
+      "link": false,
+      "git": "https://github.com/m4t1ce/familyTree",
+      "description": {
+        "eng": "Website where one can create/share his genealogic tree. It was my first project where I was working with noSQLdb.",
+        "pl": "Strona umożliwiająca tworzenie/dzielenie się drzewem genealogicznym. Pierwszy projekt w którym pracowałem z noSQLdb."
+      },
+      "image": "./imgs/tree.webp ",
+      "placeholder": " ./imgs/tree_placeholder"
+    },
+    {
+      "id": "7",
+      "title": {
+        "eng": "YT challenge site.",
+        "pl": "Strona na wyzwanie z YT"
+      },
+      "tech": ["React", "Bootstrap", "lazy-loading"],
+      "link": "https://lcowebchallenge.netlify.app/",
+      "git": "https://github.com/m4t1ce/lco",
+      "description": {
+        "eng": "Challenge given by hitesh choudary in which I had to create basketball team website.(React, Cloudinary, Lazyload)",
+        "pl": "Wyzwanie do utworzenia strony internetowej dla drużyny koszykarskiej.(React, Cloudinary, Lazyload)"
+      },
+      "image": "./imgs/lco.webp",
+      "placeholder": "./imgs/lco_placeholder.webp"
+    },
+    {
+      "id": "11",
+      "title": {
+        "eng": "My first website made in react.",
+        "pl": "Moja pierwsza strona w React."
+      },
+      "tech": ["React", "youtube-api", "Firebase-hosted", "video element"],
+      "link": "https://djherbertmusic-f0740.firebaseapp.com/",
+      "description": {
+        "eng": " My first project for which I was to get paid and stored firebase.",
+        "pl": " Mój pierwszy projekt za który miałem mieć zapłacone oraz pierwszy kontakt z firebase."
+      },
+      "image": "./imgs/dj.webp",
+      "placeholder": " ./imgs/dj_placeholder.webp"
+    },
+    {
+      "id": "4",
+      "title": {
+        "eng": "Monopoly recreation",
+        "pl": "Monopolowi"
+      },
+      "tech": ["Next.js", "Firebase", "Recoil", "BML loop"],
+      "link": false,
+      "git": "https://github.com/m4t1ce/monopol",
+      "description": {
+        "eng": "Monopoly game recreation on the web. Users can create and join games, project is hooked with data gathering system. During building this project I used Scrum approach which was documented in my diploma paper.",
+        "pl": "Ta aplikacja to odtworzenie monopoly w internecie. Strona jest próbą zastosowania pojęcia Lean, o którym pisałem w swojej pracy licencjackiej, w praktyce."
+      },
+      "image": "./imgs/monopol.webp ",
+      "placeholder": "./imgs/monopol_placeholder.webp  "
+    }
+  ]
 }
