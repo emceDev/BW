@@ -5,12 +5,12 @@
     {
       "title": "Javascript",
       "short": {
-        "eng": "I have renowned certificates confirming that I can develop web applications using JavaScript",
-        "pl": "Posiadam certyfikaty OKE potwierdzające moją zdolność do tworzenia aplikacji internetowych z użyciem JavaScript"
+        "eng": "I am capable of creating interactive websites, increasing efficiency in day-to-day work as well as I know how to work with various JavaScript frameworks and libraries.",
+        "pl": "Potrafię tworzyć interaktywne strony internetowe, zwiększać efektywność w codziennej pracy oraz pracować z różnymi frameworkami i bibliotekami JavaScript. I mam certyfikat JS od OKE."
       },
       "desc": {
-        "eng": "I try to use the latest features that ES offers. I can explain how asynchronous JS works, I can write RegExp, manipulate DOM. I wrote an extension for chrome that optimizes my daily work.",
-        "pl": "Napisałem wiele narzędzi i aplikacji web z użyciem JS. Staram się korzystać z najnowszych funkcji jakie oferuje ES. Potrafię wyjaśnić jak działa asynchroniczność w JS, pisać RegExp, manipulować DOM. Napisałem rozszerzenie do chrome optymalizujące moją codzienną pracę."
+        "eng": "I specialise in creating programs that increase productivity. I have created an extension for chrome that speeds up the pace of work fivefold by automating browser actions such as opening sub-pages with specific keywords, highlighting, copying and storing email addresses, company names, links and phone numbers. Additionally, I am skilled in automation testing, including simulating user behaviour on the site using SELENIUM or PUPPETEER, which has saved many hours of work that I would previously have had to spend on manual testing. I love automation!",
+        "pl": "Specjalizuję się w tworzeniu programów zwiększających efektywność pracy. Stworzyłem rozszerzenie do chrome, które pięciokrotnie przyspiesza tempo pracy poprzez automatyzację czynności w przeglądarce, takich jak otwieranie podstron z określonymi słowami kluczowymi, podświetlanie, kopiowanie i przechowywanie adresów email, nazw firm, linków oraz numerów telefonów. Dodatkowo, posiadam umiejętności w automatyzacji testów, w tym symulacji zachowań użytkownika na stronie przy użyciu SElENIUM czy PUPPETEER, co pozwoliło zaoszczędzić wiele godzin pracy, które wcześniej musiałbym poświęcić na ręczne testowanie. Uwielbiam automatyzację!"
       }
     },
     {
@@ -27,12 +27,12 @@
     {
       "title": "Node.js",
       "short": {
-        "eng": "Created multiple Web-Apis, guiding the user from safe registration to fully usable web applications. ",
-        "pl": "Potrafię tworzyć serwery Node, standalone jak i z Expressem"
+        "eng": "Machine configuration, Nginx, PM2, Express, Selenium, Azure, Websockets, mineflayer.",
+        "pl": "Konfiguracja maszyny, Nginx, PM2, Express, Selenium, Azure, Websockets, mineflayer."
       },
       "desc": {
         "eng": "I m capable of hosting Node servers in one cloud (cheap and with SSL :) ). I understand what asynchronicity is in Node, how to work with files, retrieve data from databases like Mongo or FirebaseRtdb, process it and return it. I can take a user from registration to logging out using Bcrypt or JWT tokens. I am familiar with Websockets and creating Rest APi. I am also capable of using Selenium",
-        "pl": "Potrafię zahostować kilka serwerów Node w jednej chmurze (tanio i z SSL :)). Rozumiem czym jest asynchorniczność w Node, jak pracować z plikami, pobierać dane z baz danych takich jak Mongo czy FirebaseRtdb, przetwarzać je i zwracać. Potrafię przeprowadzić użytkownika od rejestracji po wylogowanie z użyciem Bcrypt czy tokenów JWT. Znam się na Websocketach i tworzeniu Rest APi. Posiadam także umiejętność posługiwania się Selenium"
+        "pl": "Potrafię zahostować kilka serwerów Node w jednej chmurze Azure na Linux(tanio i z SSL :)). Stosuje asynchorniczność w Node. Wiem jak pracować z plikami, bazami danych takimi jak Mongo czy FirebaseRtdb. Potrafię przeprowadzić użytkownika od rejestracji po wylogowanie z użyciem Bcrypt czy tokenów JWT. Znam się na Websocketach i tworzeniu Rest APi. Posiadam także umiejętność posługiwania się Selenium."
       }
     },
     {
@@ -43,7 +43,7 @@
       },
       "desc": {
         "eng": "I believe I can turn any graphic design into a website using CSS. My skills include working with Sass, including using its variables. In addition, I am able to use selectors and create animations.",
-        "pl": "Uważam że potrafię przekształcić dowolny projekt graficzny na stronę internetową wykorzystując CSS. Moje umiejętności obejmują pracę z Sass, w tym korzystanie z jego zmiennych. Ponadto, potrafię sięgać po różnorakie selektory i tworzyć animacje."
+        "pl": "Uważam że potrafię przekształcić dowolny projekt graficzny na stronę internetową wykorzystując CSS. Moje umiejętności obejmują pracę z Sass, w tym korzystanie z jego zmiennych i modularności. Ponadto, potrafię sięgać po różnorakie selektory i tworzyć animacje."
       }
     }
   ]
