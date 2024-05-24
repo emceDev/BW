@@ -79,7 +79,7 @@
     "eng": "WordPress Maintenance",
     "pl": "Praca nad WordPress."
   },
-  "tech": ["WordPress", "CSS", "Hosting Configuration", "File Management"],
+  "tech": ["WordPress", "CSS", "Optymalizacja","Bazy danych","Hosting","zabezpieczenia"],
   "link": "https://deinde.pl/blockchained/",
   "git": "https://github.com/emceDev/",
   "description": {
