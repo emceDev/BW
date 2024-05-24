@@ -58,8 +58,39 @@
       "image": "./imgs/Apollo.webp ",
       "placeholder": "./imgs/Apollo_placeholder.webp "
     },
+     {
+  "id": "3",
+  "title": {
+    "eng": "PDF Batch Creation Script",
+    "pl": "Skrypt do Masowego Generowania PDF"
+  },
+  "tech": ["Python", "PyPDF2", "OS", "Shutil"],
+  "link": "https://deinde.pl/rezultaty-3/",
+  "git": "https://github.com/emceDev/PDFGenerator",
+  "description": {
+    "eng": "Script enabling simultaneous creation of hundreds of educational PDF files in various languages, ensuring consistency in folder and file naming along with content. Using this script saved dozens of hours during the preparation of materials.",
+    "pl": "Skrypt umożliwiający tworzenie setek plików PDF edukacyjnych w różnych językach, gwarantując spójność nazewnictwa folderów i plików wraz z zawartością. Wykorzystanie tego skryptu zaoszczędziło dziesiątki godzin podczas opracowywania materiałów."
+  },
+  "image": "./imgs/PDFGenerator.webp",
+  "placeholder": "./imgs/PDFGenerator_placeholder.webp"
+},{
+  "id": "5",
+  "title": {
+    "eng": "WordPress Maintenance",
+    "pl": "Praca nad WordPress."
+  },
+  "tech": ["WordPress", "CSS", "Hosting Configuration", "File Management"],
+  "link": "https://deinde.pl/blockchained/",
+  "git": "https://github.com/emceDev/",
+  "description": {
+    "eng": "Configured WordPress settings from the hosting level, saving company resources on planned consultations with specialists. Found a better method for storing large files and managed unnecessary backups to avoid upgrading to a higher hosting plan, thus reducing costs. Wrote custom CSS code which allowed for better customization beyond sliders and sped up the work. Mastered WordPress management and after a few days, started onboarding new users to handle it.",
+    "pl": "Konfigurowałem ustawienia WordPress z poziomu hostingu, oszczędzając zasoby firmy na planowane konsultacje ze specjalistami. Znalazłem lepszą metodę przechowywania dużych plików oraz zająłem się zbędnymi kopiami zapasowymi w taki sposób, aby uniknąć przechodzenia na wyższy plan cenowy hostingu, redukując koszty. Pisałem własny kod CSS, co umożliwiło wyjście ponad suwaki i przyśpieszało prace. Opanowałem obsługę WordPress i po kilku dniach wdrażałem nowe osoby w jego obsługę."
+  },
+  "image": "./imgs/WordPress.webp",
+  "placeholder": "./imgs/WordPress_placeholder.webp"
+},
     {
-      "id": "3",
+      "id": "6",
       "title": {
         "eng": "AgroFleet.",
         "pl": "AgroFleet."
@@ -85,7 +116,7 @@
       "placeholder": "./imgs/agrofleet_placeholder.webp "
     },
     {
-      "id": "6",
+      "id": "30",
       "title": {
         "eng": "School portfolio",
         "pl": "Porfolio szkoły"
@@ -108,7 +139,7 @@
     },
 
     {
-      "id": "5",
+      "id": "50",
       "title": {
         "eng": "FamilyTree",
         "pl": "FamilyTree"
